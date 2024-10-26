@@ -1,4 +1,4 @@
-public class Officer extends Workers{
+public abstract class Officer extends Workers{
 
     private String departure;
     private String shift;

@@ -1,4 +1,4 @@
-public class Academician extends Workers {
+public abstract class Academician extends Workers {
 
     private String departure;
     private String title;
@@ -29,13 +29,7 @@ public class Academician extends Workers {
 
 
 
-    public void entryLesson () {
-
-        System.out.println(getNameSurname()+ " derse girdi.");
-
-
-    }
-
+    public abstract void entryLesson ();
 
 
 }

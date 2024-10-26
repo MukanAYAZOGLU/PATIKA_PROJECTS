@@ -24,8 +24,16 @@ private String officeHour;
     }
 
 
+    @Override
+    public void entryLesson() {
+        System.out.println(getNameSurname()+" derse giriş yaptı.");
 
+    }
 
+    @Override
+    public void diningHall() {
 
+        System.out.println(getNameSurname()+" yemekhaneye giriş yaptı");
 
+    }
 }

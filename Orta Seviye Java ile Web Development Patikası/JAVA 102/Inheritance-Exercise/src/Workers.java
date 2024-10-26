@@ -1,4 +1,4 @@
-public class Workers {
+public abstract class Workers {
 
 
     private String nameSurname;
@@ -12,9 +12,6 @@ public class Workers {
         this.phoneNumber = phoneNumber;
         this.ePosta = ePosta;
         }
-
-
-
 
 
 
@@ -43,7 +40,7 @@ public class Workers {
     }
 
 
-    public void entery() {
+    public void entry() {
 
         System.out.println(this.nameSurname+" giriş yaptı.");
 
@@ -57,12 +54,7 @@ public class Workers {
     }
 
 
-    public void refectory() {
-
-        System.out.println(this.nameSurname+" yemekhaneye giriş yaptı.");
-
-
-    }
+    public abstract void diningHall();
 
 
 

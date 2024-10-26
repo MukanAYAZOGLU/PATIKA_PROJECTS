@@ -14,7 +14,7 @@ public class LaboratoryAssistant extends Assistant{
 
     @Override
     public void entryLesson() {
-        super.entryLesson();
+        System.out.println(getNameSurname()+" (lab asistanı) derse girdi.");
     }
 
 }
