@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="57db64e6-725f-4559-a550-df7d72383d8e" name="Changes" comment="Sınıfı Geçme Durumu Programı  main dosyasında ufak bir değişiklik gerçekleştirildi.">
+      <change beforePath="$PROJECT_DIR$/../Kullanici Girisi Programi/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kullanici Girisi Programi/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MukanAYAZOGLU"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MukanAYAZOGLU/PATIKA_PROJELER.git",
+    "accountId": "d35edd22-cecf-4c71-ac9e-9595f51ef46f"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2m3vOW6RJThArQ51EIk8mSuiqBB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57db64e6-725f-4559-a550-df7d72383d8e" name="Changes" comment="" />
+      <created>1726318044238</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726318044238</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Sınıfı Geçme Durumu Programı klasörleri eklendi.">
+      <option name="closed" value="true" />
+      <created>1726320398150</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726320398150</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Sınıfı Geçme Durumu Programı  main dosyasında ufak bir değişiklik gerçekleştirildi.">
+      <option name="closed" value="true" />
+      <created>1726320532068</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726320532068</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sınıfı Geçme Durumu Programı klasörleri eklendi." />
+    <MESSAGE value="Sınıfı Geçme Durumu Programı  main dosyasında ufak bir değişiklik gerçekleştirildi." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sınıfı Geçme Durumu Programı  main dosyasında ufak bir değişiklik gerçekleştirildi." />
+  </component>
+</project>

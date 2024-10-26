@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9179ba8b-378d-4043-b009-687c8c8c1f66" name="Changes" comment="workspace.xml (unknown) changes pushed.">
+      <change afterPath="$PROJECT_DIR$/../Matris Transpozunu Bulan Program/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Matris Transpozunu Bulan Program/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Matris Transpozunu Bulan Program/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Matris Transpozunu Bulan Program/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Matris Transpozunu Bulan Program/Matris Transpozunu Bulan Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Matris Transpozunu Bulan Program/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cok Boyutlu Diziler ile A Harfi Yazdiran Program/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cok Boyutlu Diziler ile A Harfi Yazdiran Program/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MukanAYAZOGLU&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MukanAYAZOGLU/PATIKA_PROJELER.git&quot;,
+    &quot;accountId&quot;: &quot;d35edd22-cecf-4c71-ac9e-9595f51ef46f&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2mwNZFxuZupXmeKYNp2r52THEYl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9179ba8b-378d-4043-b009-687c8c8c1f66" name="Changes" comment="" />
+      <created>1727983733960</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727983733960</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Dizideki Elemanlarin Ortalamasini Bulan Program directories pushed.">
+      <option name="closed" value="true" />
+      <created>1727986811191</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727986811191</updated>
+    </task>
+    <task id="LOCAL-00002" summary="workspace.xml (unknown) changes pushed.">
+      <option name="closed" value="true" />
+      <created>1727986839495</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727986839495</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dizideki Elemanlarin Ortalamasini Bulan Program directories pushed." />
+    <MESSAGE value="workspace.xml (unknown) changes pushed." />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml (unknown) changes pushed." />
+  </component>
+</project>
