@@ -30,7 +30,7 @@ public class Inventory {
     }
 
 
-    public void chanceStuff () {
+    public String chanceStuff () {
 
         int randomNumber=rdm.nextInt(0,101) ;
 
@@ -43,13 +43,18 @@ public class Inventory {
             if (randomNumber<=20){
 
                 System.out.println ("Kazanılan Silah: Tüfek");
+                return "Tüfek";
 
             } else if (randomNumber<=50) {
 
                 System.out.println ("Kazanılan Silah: Kılıç");
+                return "Kılıç";
+
 
             } else{
-                System.out.println ("Kazanılan Silah: Silah");
+                System.out.println ("Kazanılan Silah: Tabanca");
+                return "Tabanca";
+
             }
 
         } else if (randomNumber<=50) {
@@ -61,20 +66,26 @@ public class Inventory {
             if (randomNumber<=15){
 
                 System.out.println ("Kazanılan Zırh: Hafif Zırh");
+                return "Hafif Zırh";
+
 
             } else if (randomNumber<=30) {
 
                 System.out.println ("Kazanılan Zırh: Orta Zırh");
+                return "Orta Zırh";
+
 
 
             } else{
                 System.out.println ("Kazanılan Zırh: Ağır Zırh");
+                return "Ağır Zırh";
+
 
             }
 
 
 
-        }else if (randomNumber<75){
+        }else if (randomNumber<=75){
 
 
             randomNumber=rdm.nextInt(0,101) ;
@@ -83,20 +94,24 @@ public class Inventory {
             if (randomNumber<=50){
 
                 System.out.println ("Kazanılan Para: 1");
+                return "1";
 
             } else if (randomNumber<=80) {
 
                 System.out.println ("Kazanılan Para: 5");
+                return "5";
 
 
             } else{
                 System.out.println ("Kazanılan Para: 10");
+                return "10";
 
             }
 
         }else {
 
-            System.out.println ("Hiçbir şey kazanmadınız.");
+            return "Hiçbir şey kazanmadınız.";
+
         }
 
 

@@ -18,10 +18,10 @@ private String location;
 private boolean answer=false;
 private int intAnswer;
 private String charAnswer;
-private String weapon;
-private String armor;
-private boolean bWeapon;
-private boolean bArmor;
+protected String weapon;
+protected String armor;
+protected boolean bWeapon;
+protected boolean bArmor;
 private int numberOfMonsters;
 private boolean bRiver;
 private boolean bForest;
@@ -35,7 +35,7 @@ private final Scanner scan= new Scanner(System.in);
 
 private final Random rdm = new Random();
 
-Inventory inventory= new Inventory();
+private Inventory inventory= new Inventory();
 
 
     SafeHouse safeHouse= new SafeHouse();
@@ -124,10 +124,11 @@ Inventory inventory= new Inventory();
 
             return vampire;
 
-        }else {
+        }else if (this.monster.equals("Ayı")) {
 
-            return bear;
-        }
+            return vampire;
+
+        } else return snake;
 
     }
 
@@ -282,7 +283,6 @@ Inventory inventory= new Inventory();
 
                         } else {
                             System.out.println("Bu lokasyonundaki canavarlar daha önce yok edildiğinden dolayı giriş yapamamaktasınız. Başka bir loksayonu deneyininiz.");
-                            selectLocation();
                         }
 
                         break;
@@ -314,7 +314,6 @@ Inventory inventory= new Inventory();
 
                         } else {
                             System.out.println("Bu lokasyonundaki canavarlar daha önce yok edildiğinden dolayı giriş yapamamaktasınız. Başka bir loksayonu deneyininiz.");
-                            selectLocation();
                         }
 
                         break;
@@ -346,7 +345,6 @@ Inventory inventory= new Inventory();
                             } else game=false;
                         } else {
                             System.out.println("Bu lokasyonundaki canavarlar daha önce yok edildiğinden dolayı giriş yapamamaktasınız. Başka bir loksayonu deneyininiz.");
-                            selectLocation();
 
                         }
                         break;
@@ -379,7 +377,6 @@ Inventory inventory= new Inventory();
                             } else game=false;
                         } else {
                             System.out.println("Bu lokasyonundaki canavarlar daha önce yok edildiğinden dolayı giriş yapamamaktasınız. Başka bir loksayonu deneyininiz.");
-                            selectLocation();
 
                         }
                         break;
@@ -406,7 +403,6 @@ Inventory inventory= new Inventory();
                         } else {
                             System.out.println("Yedek canınız tükendiğinden dolayı Güvenli Ev'e girişiniz reddedilmiştir.");
                         }
-                        selectLocation();
                         break;
 
 
@@ -958,8 +954,48 @@ Inventory inventory= new Inventory();
 
                             System.out.println(returnMonster().getName() + " yenildi. " + this.location + " lokasyounda kalan canavar adedi: " + this.numberOfMonsters);
                             System.out.println ("Karakterin Sağlık Durumu: "+returnWarrior().getHealth());
+
                             if (location.equals("Maden")) {
-                                inventory.chanceStuff();
+                                if (inventory.chanceStuff().equals(rifle.getName())) {
+
+                                    returnWarrior().setDamage(returnWarrior().getDamage()+ rifle.getDamage());
+                                    bWeapon=true;
+                                }else if (inventory.chanceStuff().equals(sword.getName())) {
+
+                                    returnWarrior().setDamage(returnWarrior().getDamage()+ sword.getDamage());
+                                    bWeapon=true;
+
+                                }else if (inventory.chanceStuff().equals(pistol.getName())) {
+
+                                    returnWarrior().setDamage(returnWarrior().getDamage()+ pistol.getDamage());
+                                    bWeapon=true;
+                                } else if (inventory.chanceStuff().equals(lightArmor.getName())) {
+
+                                    returnWarrior().setBlocking(returnWarrior().getBlocking()+ lightArmor.getBlocking());
+                                    bArmor=true;
+
+                                } else if (inventory.chanceStuff().equals(mediumArmor.getName())) {
+
+                                    returnWarrior().setBlocking(returnWarrior().getBlocking()+ mediumArmor.getBlocking());
+                                    bArmor=true;
+
+                                }else if (inventory.chanceStuff().equals(heavyArmor.getName())) {
+
+                                    returnWarrior().setBlocking(returnWarrior().getBlocking()+ heavyArmor.getBlocking());
+                                    bArmor=true;
+
+                                } else if (inventory.chanceStuff().equals("1")) {
+                                    returnWarrior().setMoney(returnWarrior().getMoney()+1);
+
+                                }else if (inventory.chanceStuff().equals("5")) {
+                                    returnWarrior().setMoney(returnWarrior().getMoney()+5);
+
+                                }else if (inventory.chanceStuff().equals("10")) {
+                                    returnWarrior().setMoney(returnWarrior().getMoney()+10);
+
+                                }
+
+
                             } else {
                             System.out.println ("Kazanılan eşya: "+inventory.getGoods(this.location));
                             System.out.println ("Kazanılan para: "+returnMonster().getMoney());
