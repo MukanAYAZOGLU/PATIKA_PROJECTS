@@ -1,9 +1,10 @@
 package Account;
 
 public class Individual extends Account {
-    public static final double rate = 1.15;
 
-    public Individual(User user) {
-        super(user, rate);
+    private static final double RATE=1.15;
+
+    protected Individual(User user) {
+        super(user, RATE);
     }
 }

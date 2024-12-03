@@ -1,109 +1,151 @@
 package Account;
 
-import Input.Input;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 import java.util.TreeSet;
 
 public class AccountManager {
-    private static final TreeSet<Account> accounts = new TreeSet<>();
-    private static Account loggedInAccount = null;
 
-    public static boolean logIn() {
-        String email;
-        String password;
+private static final TreeSet<Account> accounts = new TreeSet<>();
+private static Account accessedAccount=null;
 
-        do {
-            System.out.println("------------Log In------------");
-            System.out.print("E-Mail: ");
-            email = Input.nextLine();
-            if (email.equals("q") || email.equals("Q")) return false;
-            System.out.print("Password: ");
-            password = Input.nextLine();
-            if (password.equals("q") || password.equals("Q")) return false;
-        } while (!(isLoggedIn(email, password)));
 
-        return true;
-    }
 
-    public static void createAccount() {
-        String name;
-        String surName;
-        String email;
-        String password;
-        String job;
-        int age;
+static Scanner scanner = new Scanner(System.in);
 
-        createAccountLabel:
-        while (true) {
-            System.out.print("""
-                                    
-                    -------------Account Type-------------
-                    1-Individual
-                    2-Enterprise
-                    --------------------------------------
-                    Enter Number:\s""");
+public static boolean logIn() {
 
-            int accountTypeNum = Input.nextInt(1, 3);
+    String eMail;
+    String password;
 
-            System.out.print("E-Mail: ");
-            email = Input.nextLine();
+    do {
 
-            for (Account account : accounts) {
-                if (account.getUser().getEmail().equals(email)) {
-                    System.out.println("This Account Already Exists!!!");
-                    continue createAccountLabel;
-                }
-            }
-
-            System.out.print("Password: ");
-            password = Input.nextLine();
-            System.out.print("Name: ");
-            name = Input.nextLine();
-            System.out.print("Surname: ");
-            surName = Input.nextLine();
-            System.out.print("Job: ");
-            job = Input.nextLine();
-            System.out.print("Age: ");
-            age = Input.nextInt();
-
-            switch (accountTypeNum) {
-                case 1 -> accounts.add(new Individual(new User(name, surName, email, password, job, getDate(), age)));
-                case 2 -> accounts.add(new Enterprise(new User(name, surName, email, password, job, getDate(), age)));
-            }
-
-            System.out.println("New Account Have Created!");
-            break;
+        System.out.println ("--------------Log In--------------");
+        System.out.print ("Please enter your e-mail address: ");
+        eMail = System.console().readLine();
+        System.out.print ("Please enter your password: ");
+        password = System.console().readLine();
+        if (eMail.isEmpty() || password.isEmpty()) {
+            System.out.println ("Emty e-mail or password\nAccess deniyed!");
+            return false;
         }
+
+
+        }while(!isLoggedIn(eMail,password));
+
+    return true;
+}
+
+
+public static void createAccount() {
+
+    String name;
+    String surname;
+    String eMail;
+    String password;
+    String job;
+    int age;
+
+
+    creteAccountLabel:
+    while (true) {
+
+System.out.print ("""
+        ----------Acoount Type----------
+        1-Individual
+        2-Enterprise
+        0-Exit
+        --------------------------------
+        Choice:\s""");
+
+    int choice=scanner.nextInt();
+
+    if (choice == 0) {
+        break creteAccountLabel;
     }
 
-    public static String getDate() {
-        LocalDateTime date = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
-        return date.format(formatter);
+    System.out.print ("E-Mail: ");
+    eMail=System.console().readLine();
+
+    for(Account a:accounts  ) {
+        if (a.getUser().getE_MAIL().equals(eMail)) {
+            System.out.println ("This account is already exists!");
+            continue creteAccountLabel;
+        } else if (choice<1 || choice>2) {
+            continue creteAccountLabel;
+        }
+
     }
 
-    public static boolean isLoggedIn(String email, String password) {
-        for (Account account : accounts) {
-            if (account.getUser().getEmail().equals(email)) {
-                if (account.getUser().getPassword().equals(password)) {
-                    account.getUser().setLastLogInDate(getDate());
-                    loggedInAccount = account;
-                    System.out.println("You Logged In!");
-                    return true;
-                }
+
+    System.out.print ("Password: ");
+    password=System.console().readLine();
+    System.out.print ("Name: ");
+    name=System.console().readLine();
+    System.out.print ("Surname: ");
+    surname=System.console().readLine();
+    System.out.print ("Job: ");
+    job=System.console().readLine();
+    System.out.print ("Age: ");
+    age=scanner.nextInt();
+
+    switch (choice) {
+
+        case 1: accounts.add(new Individual(new User(name,surname,age,job, eMail,password, getDate())));
+            System.out.println ("Account Created! Congratulations!");
+        break;
+        case 2: accounts.add(new Enterprise(new User(name,surname,age,job, eMail,password, getDate())));
+        System.out.println ("Account Created! Congratulations!");
+        break;
+        case 0: break creteAccountLabel;
+
+        default: System.out.println ("Choice is not valid!");
+
+
+
+    }
+
+
+
+
+    }
+
+
+}
+
+public static String getDate() {
+
+    LocalDateTime localDateTime = LocalDateTime.now();
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+    return localDateTime.format(formatter);
+
+}
+
+
+public static boolean isLoggedIn(String eMail, String password) {
+
+    for(Account a: accounts  ) {
+        if (a.getUser().getE_MAIL().equals(eMail)) {
+            if (a.getUser().getPASSWORD().equals(password)) {
+                accessedAccount=a;
+                System.out.println ("You Logged in!");
+                return true;
             }
         }
-        System.out.println("Email or Password Incorrect!");
-        return false;
+
     }
 
-    public static Account getLoggedInAccount() {
-        return loggedInAccount;
+    return false;
+
+}
+
+
+    public static Account getAccessedAccount() {
+        return accessedAccount;
     }
 
-    public static void setNullLoggedIntAccount() {
-        loggedInAccount = null;
+    public static void setAccessedAccount(Account accessedAccount) {
+        AccountManager.accessedAccount = accessedAccount;
     }
 }

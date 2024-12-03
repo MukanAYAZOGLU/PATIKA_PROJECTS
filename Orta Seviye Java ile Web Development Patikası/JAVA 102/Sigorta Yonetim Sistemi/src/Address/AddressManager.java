@@ -1,51 +1,74 @@
 package Address;
 
-import Input.Input;
-
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Scanner;
 
 public class AddressManager {
-    public static void addAddress(ArrayList<Address> addresses) {
-        String name;
-        String address;
-        int preference;
 
-        System.out.print("""
-                1-Home Address
-                2-Business Address
-                Enter Number:\s""");
+static Scanner scanner = new Scanner(System.in);
+    
+public static void addAddress(ArrayList<Address> address) {
 
-        preference = Input.nextInt(1, 3);
+String addressName;
+String fullAddress;
+int choice;
 
-        System.out.print("Enter Address Name: ");
-        name = Input.nextLine();
-        System.out.println("Enter Full Address:");
-        address = Input.nextLine();
+System.out.println ("""
+        1-Home Address
+        2-Business Address
+        Choice:\s""");
 
-        switch (preference) {
-            case 1 -> addresses.add(new HomeAddress(name, address));
-            case 2 -> addresses.add(new BusinessAddress(name, address));
-        }
-        reList(addresses);
+choice = scanner.nextInt();
+
+
+System.out.println ("Address Name: ");
+addressName = scanner.next();
+System.out.println ("Full Address: ");
+fullAddress = scanner.next();
+
+
+switch (choice) {
+
+    case 1:address.add(new HomeAddress(addressName,fullAddress));
+    break;
+    case 2:address.add(new BusinessAddress(addressName,fullAddress));
+    break;
+    default:System.out.println ("Seçenek dışı seçim yaptınız.");
+
+}
+reList(address);
+
+}
+
+public static void removeAddress(ArrayList<Address> address) {
+    printAddress(address);
+
+    System.out.print ("Select the address that you want to remove: ");
+    int choice= scanner.nextInt();
+    if (choice <0 || choice > address.size()) {
+        System.out.println ("Choice is invalid.");
+    } else {
+        address.remove(choice-1);
+        System.out.println ("Selected address is removed.");
     }
 
-    public static void removeAddress(ArrayList<Address> addresses) {
-        printAddresses(addresses);
-        System.out.print("Enter Number or Press Q to Back: ");
-        int addressIndex = Input.nextInt(1, addresses.size() + 1) - 1;
-        addresses.remove(addressIndex);
-    }
 
-    public static void printAddresses(ArrayList<Address> addresses) {
-        int i = 0;
-        System.out.println("------------------------Addresses------------------------");
-        for (Address address : addresses)
-            System.out.println((++i) + "-" + address.toString() +
-                    "\n---------------------------------------------------------");
-    }
+}
 
-    private static void reList(ArrayList<Address> addresses) {
-        addresses.sort(Comparator.comparing((Address address) -> address.getName()));
+public static void printAddress(ArrayList<Address> address) {
+    int i=0;
+    System.out.println ("-----------Addresses-----------");
+    for(Address a: address ) {
+        System.out.println (++i+" - "+a.toString());
+        System.out.println ("\n-------------------------");
+
     }
+}
+
+public static void reList(ArrayList<Address> address) {
+    address.sort(Comparator.comparing(Address::getName));
+}
+
+
 }

@@ -1,5 +1,11 @@
 package Address;
 
 public interface Address {
-    String getName();
+
+
+    public String getName();
+
+
+    public String toString();
 }
+

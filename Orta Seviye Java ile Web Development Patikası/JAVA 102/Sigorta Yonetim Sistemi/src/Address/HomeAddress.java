@@ -1,21 +1,27 @@
 package Address;
 
-public class HomeAddress implements Address {
-    private final String name;
-    private final String address;
+public class HomeAddress implements Address{
 
-    public HomeAddress(String name, String address) {
-        this.name = name;
-        this.address = address;
+    private final String ADDRESS_NAME;
+    private final String FULL_ADDRESS;
+
+
+    public HomeAddress(String addressName, String fullAddress) {
+        ADDRESS_NAME = addressName;
+        FULL_ADDRESS = fullAddress;
     }
+
+    public String getADDRESS_NAME() {
+        return ADDRESS_NAME;
+    }
+
+    public String getFULL_ADDRESS() {
+        return FULL_ADDRESS;
+    }
+
 
     @Override
     public String getName() {
-        return name;
-    }
-
-    @Override
-    public String toString() {
-        return name + "(Home Address)" + "\n" + address;
+        return "";
     }
 }

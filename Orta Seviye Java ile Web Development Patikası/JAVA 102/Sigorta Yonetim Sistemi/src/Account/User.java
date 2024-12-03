@@ -5,51 +5,70 @@ import Address.Address;
 import java.util.ArrayList;
 
 public class User {
-    private final String name;
-    private final String surName;
-    private final String email;
-    private final String password;
-    private final String job;
-    private String lastLogInDate;
-    private final int age;
-    private final ArrayList<Address> addresses;
 
-    public User(String name, String surName, String email, String password, String job, String lastLogInDate, int age) {
-        this.name = name;
-        this.surName = surName;
-        this.email = email;
-        this.password = password;
-        this.job = job;
-        this.lastLogInDate = lastLogInDate;
-        this.age = age;
-        addresses = new ArrayList<>();
+    private final String NAME;
+    private final String SURNAME;
+    private final int AGE;
+    private final String JOB;
+    private final String E_MAIL;
+    private final String PASSWORD;
+    private final String LAST_ACCESS;
+    private final ArrayList<Address> ADDRESSES;
+
+    public User(String name, String surname, int age, String job, String eMail, String password, String lastAccess) {
+        NAME = name;
+        SURNAME = surname;
+        AGE = age;
+        JOB = job;
+        E_MAIL = eMail;
+        PASSWORD = password;
+        LAST_ACCESS = lastAccess;
+        ADDRESSES = new ArrayList<>();
     }
 
-    public String getEmail() {
-        return email;
-    }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setLastLogInDate(String lastLogInDate) {
-        this.lastLogInDate = lastLogInDate;
-    }
-
-    public ArrayList<Address> getAddresses() {
-        return addresses;
-    }
-
-    @Override
     public String toString() {
-        return "--------------------Account Information--------------------" +
-                "\nName: " + name +
-                "\nSurname: " + surName +
-                "\nE-Mail: " + email +
-                "\nJob: " + job +
-                "\nAge: " + age +
-                "\nLast Log In: " + lastLogInDate +
-                "\n-----------------------------------------------------------";
+
+
+        return "--------------Account Information--------------"
+                +"\nName: " + NAME
+                +"\nSurname: " + SURNAME
+                 +"\nAge: " + AGE
+                +"\nJob: " + JOB
+                +"\nEmail: " + E_MAIL
+                +"\nLast Access: " + LAST_ACCESS;
+    }
+
+
+    public String getNAME() {
+        return NAME;
+    }
+
+    public String getSURNAME() {
+        return SURNAME;
+    }
+
+    public int getAGE() {
+        return AGE;
+    }
+
+    public String getJOB() {
+        return JOB;
+    }
+
+    public String getE_MAIL() {
+        return E_MAIL;
+    }
+
+    public String getPASSWORD() {
+        return PASSWORD;
+    }
+
+    public String getLAST_ACCESS() {
+        return LAST_ACCESS;
+    }
+
+    public ArrayList<Address> getADDRESSES() {
+        return ADDRESSES;
     }
 }

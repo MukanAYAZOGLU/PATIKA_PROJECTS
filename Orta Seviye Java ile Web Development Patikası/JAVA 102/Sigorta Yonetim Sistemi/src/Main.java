@@ -1,128 +1,162 @@
-import Account.Account;
-import Account.AccountManager;
+import Account.*;
+import Address.Address;
 import Address.AddressManager;
-import Input.Input;
-import Insurance.InsuranceManager;
+import Insurance.*;
+
+import java.util.Scanner;
+
 
 public class Main {
+
+   static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        run();
+        runProgram();
     }
 
-    public static void run() {
-        program:
+    public static void runProgram() {
+
+
+        theProgramPart:
+
         while (true) {
-            System.out.print("""
-                                        
-                    ----------Insurance Interface---------
-                    1-LogIn
-                    2-Create Account
-                    Q-Exit Program
-                    --------------------------------------
-                    Enter:\s""");
 
-            String preference = Input.nextLine();
+            System.out.println ("""
+                    -------Insurance Interface------
+                    1- Log In
+                    2- Create An Account
+                    0- Exit the Program
+                    Choice:\s""");
 
-            switch (preference) {
-                case "1" -> logInMenu();
-                case "2" -> createAccount();
-                case "q" -> {
-                    break program;
-                }
-                default -> System.out.println("Enter Valid Value!");
+
+                int choice= scanner.nextInt();
+
+            switch (choice) {
+                case 1:logIn();
+                break ;
+                case 2:createAccount();
+                break ;
+                case 0: break theProgramPart;
+                default: System.out.println ("Choice is not valid!");
+
             }
-        }
+
+
+
     }
 
-    public static void logInMenu() {
-        if (AccountManager.logIn()) accountMenu(AccountManager.getLoggedInAccount());
-        else run();
+
+
+
+
+
+}
+
+    public static void logIn() {
+        if (AccountManager.logIn())
+            accountMenu(AccountManager.getAccessedAccount());
+        else runProgram();
     }
 
     public static void createAccount() {
+
         AccountManager.createAccount();
-        run();
+        runProgram();
     }
 
     public static void accountMenu(Account account) {
-        accountMenuLabel:
+
+        accountMenuPart:
+
         while (true) {
-            System.out.print("""
-                                        
-                    -------------Account Menu-------------
-                    1-Insurance Transactions
-                    2-Address Operations
-                    3-Show Person's Information
-                    Q-Exit
-                    --------------------------------------
-                    Enter:\s""");
 
-            String preference = Input.nextLine().toLowerCase();
+            System.out.println ("""
+                    -------Account Menu-------
+                    1- Insurance Transactions
+                    2- Address Options
+                    3- Person's Information
+                    0- Exit
+                    Choice:\s""");
 
-            switch (preference) {
-                case "1" -> insuranceMenu(account);
-                case "2" -> addressMenu(account);
-                case "3" -> account.showInfo();
-                case "q" -> {
-                    AccountManager.setNullLoggedIntAccount();
-                    break accountMenuLabel;
-                }
-                default -> System.out.println("Enter Valid Value!");
+            int choice= scanner.nextInt();
+
+            switch (choice) {
+
+                case 1: insuranceMenu(account);
+                break;
+                case 2: addressMenu(account);
+                break ;
+                case 3:account.showInfo();
+                break ;
+                case 0: break accountMenuPart;
+                default: System.out.println ("Choice is not valid!");
+
             }
-        }
-    }
 
+        }
+
+    }
     public static void insuranceMenu(Account account) {
 
-        insuranceMenuLabel:
+        insuranceMenuPart:
+
         while (true) {
-            System.out.print("""
-                                        
-                    ------------Insurance Menu------------
-                    1-Show Insurances
-                    2-Add Insurance
-                    Q-Back to Menu
-                    --------------------------------------
-                    Enter:\s""");
 
-            String preference = Input.nextLine().toLowerCase();
+System.out.println ("""
+        -------Insurance Menu-------
+        1- Show Insurances
+        2- Add Insurance
+        3- Remove Insurance
+        0- Exit""");
 
-            switch (preference) {
-                case "1" -> InsuranceManager.printInsurances(account);
-                case "2" -> InsuranceManager.addInsurance(account);
-                case "q" -> {
-                    break insuranceMenuLabel;
-                }
-                default -> System.out.println("Enter Valid Value!");
+ int choice= scanner.nextInt();
+ switch (choice) {
 
-            }
+     case 1: InsuranceManager.printInsurances(account);
+     break;
+     case 2: InsuranceManager.addInsurance(account);
+     break;
+     case 0:
+         break insuranceMenuPart;
+         default: System.out.println ("Choice is not valid!");
+ }
+
+
+
+
         }
     }
 
     public static void addressMenu(Account account) {
-        addressMenuLabel:
+
+        addressMenuStage:
         while (true) {
-            System.out.print("""
-                                        
-                    -------------Address Menu-------------
-                    1-Show Addresses
-                    2-Add Address
-                    3-Remove Address
-                    Q-Back to Menu
-                    --------------------------------------
-                    """);
 
-            String preference = Input.nextLine().toLowerCase();
+            System.out.println ("""
+                    -------Address Menu-------
+                    1- Show Address
+                    2- Add Address
+                    3- Remove Address
+                    0- Exit
+                    Choice:\s""");
+            int choice= scanner.nextInt();
+            switch (choice) {
 
-            switch (preference) {
-                case "1" -> AddressManager.printAddresses(account.getUser().getAddresses());
-                case "2" -> AddressManager.addAddress(account.getUser().getAddresses());
-                case "3" -> AddressManager.removeAddress(account.getUser().getAddresses());
-                case "q" -> {
-                    break addressMenuLabel;
-                }
-                default -> System.out.println("Enter Valid Value!");
+                case 1: AddressManager.printAddress(account.getUser().getADDRESSES());
+                        break;
+                case 2: AddressManager.addAddress(account.getUser().getADDRESSES());
+                break;
+                case 3:AddressManager.removeAddress(account.getUser().getADDRESSES());
+                break ;
+                case 0:
+                    break addressMenuStage;
+                    default: System.out.println ("Choice is not valid!");
+
             }
         }
     }
+
+
+
 }
+
