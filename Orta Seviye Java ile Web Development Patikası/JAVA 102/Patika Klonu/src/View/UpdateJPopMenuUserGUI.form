@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="View.UpdateJPopMenuUserGUI">
+  <grid id="27dc6" binding="mainMenu" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="67" y="78" width="952" height="1042"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="2bd46" binding="panelAll" layout-manager="GridLayoutManager" row-count="44" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <vspacer id="a2246">
+            <constraints>
+              <grid row="41" column="0" row-span="3" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="2edca">
+            <constraints>
+              <grid row="41" column="3" row-span="3" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="f667f">
+            <constraints>
+              <grid row="41" column="5" row-span="3" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="52b95" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Name"/>
+            </properties>
+          </component>
+          <vspacer id="1810c">
+            <constraints>
+              <grid row="41" column="6" row-span="3" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="2e5c6">
+            <constraints>
+              <grid row="41" column="7" row-span="3" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="189e0" class="javax.swing.JTextField" binding="textUpdateName">
+            <constraints>
+              <grid row="1" column="0" row-span="13" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="b246" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Password"/>
+            </properties>
+          </component>
+          <component id="2022c" class="javax.swing.JTextField" binding="textUpdatePassword">
+            <constraints>
+              <grid row="15" column="0" row-span="26" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <vspacer id="e3ea0">
+            <constraints>
+              <grid row="41" column="1" row-span="3" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="fe265" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="User Type"/>
+            </properties>
+          </component>
+          <component id="87091" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="E-Posta"/>
+            </properties>
+          </component>
+          <component id="a8cfc" class="javax.swing.JComboBox" binding="comboUpdateType">
+            <constraints>
+              <grid row="15" column="2" row-span="26" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="EDUCATOR"/>
+                <item value="STUDENT"/>
+              </model>
+            </properties>
+          </component>
+          <component id="3fef2" class="javax.swing.JTextField" binding="textUpdateEposta">
+            <constraints>
+              <grid row="1" column="7" row-span="13" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="aae7b" class="javax.swing.JComboBox" binding="combocomboUpdateLanguage">
+            <constraints>
+              <grid row="15" column="3" row-span="26" col-span="4" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value=""/>
+                <item value="C"/>
+                <item value="C++"/>
+                <item value="C#"/>
+                <item value="JAVA"/>
+                <item value="KOTLIN"/>
+                <item value="HTML"/>
+                <item value="JAVASCRIPT"/>
+                <item value="PYTHON"/>
+                <item value="PHP"/>
+              </model>
+            </properties>
+          </component>
+          <component id="d756a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="14" column="3" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Language"/>
+            </properties>
+          </component>
+          <component id="4c61a" class="javax.swing.JButton" binding="buttonUpdate">
+            <constraints>
+              <grid row="15" column="7" row-span="26" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Güncelle"/>
+            </properties>
+          </component>
+          <component id="bca8f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="User Name"/>
+            </properties>
+          </component>
+          <component id="ab34d" class="javax.swing.JTextField" binding="textUpdateUserName">
+            <constraints>
+              <grid row="1" column="1" row-span="13" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <component id="b42dd" class="javax.swing.JLabel" binding="fieldHeadLıne">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Caladea" size="26" style="1"/>
+          <horizontalAlignment value="10"/>
+          <horizontalTextPosition value="11"/>
+          <text value="Kullanıcı Güncelle"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

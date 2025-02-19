@@ -1,0 +1,1368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="View.OperatorGUI">
+  <grid id="27dc6" binding="panelMain" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="180" y="84" width="1074" height="1068"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="767e7" binding="panelTop" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="3acb" class="javax.swing.JButton" binding="buttonLogOut">
+            <constraints>
+              <grid row="0" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="ÇIKIŞ"/>
+            </properties>
+          </component>
+          <component id="ff2e9" class="javax.swing.JLabel" binding="labelWelcome">
+            <constraints>
+              <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Hoş Geldiniz"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="95046" binding="panelBottom" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <tabbedpane id="993f5" binding="tabbedUsers">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="200"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="17f16" binding="panelUsers" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Kullanıcılar"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="90c85" binding="scrollUsers">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="7cc9b" class="javax.swing.JTable" binding="tableUsers">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                  <grid id="7020" binding="panelSearch" layout-manager="GridLayoutManager" row-count="2" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="89b84" class="javax.swing.JLabel" binding="fieldUser">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="59" height="23"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="Ad Soyad"/>
+                        </properties>
+                      </component>
+                      <component id="c7ccf" class="javax.swing.JLabel" binding="fieldUserName">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="74" height="23"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="Kullanıcı Adı"/>
+                        </properties>
+                      </component>
+                      <component id="e745d" class="javax.swing.JTextField" binding="textSearchUserName">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="6c777" class="javax.swing.JComboBox" binding="comboSearchType">
+                        <constraints>
+                          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <model>
+                            <item value=""/>
+                            <item value="OPERATOR"/>
+                            <item value="EDUCATOR"/>
+                            <item value="STUDENT"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <component id="a81c8" class="javax.swing.JLabel" binding="fieldType">
+                        <constraints>
+                          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="64" height="23"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="Üyelik Tipi"/>
+                        </properties>
+                      </component>
+                      <component id="b2645" class="javax.swing.JButton" binding="buttonSearch">
+                        <constraints>
+                          <grid row="0" column="5" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <horizontalTextPosition value="11"/>
+                          <text value="ARAMA YAP"/>
+                        </properties>
+                      </component>
+                      <component id="23442" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="65" height="23"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="Yazılım Dili"/>
+                        </properties>
+                      </component>
+                      <component id="16651" class="javax.swing.JComboBox" binding="comboSearchLanguage">
+                        <constraints>
+                          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <model>
+                            <item value=""/>
+                            <item value="C"/>
+                            <item value="C++"/>
+                            <item value="C#"/>
+                            <item value="JAVA"/>
+                            <item value="KOTLIN"/>
+                            <item value="HTML"/>
+                            <item value="JAVASCRIPT"/>
+                            <item value="PYTHON"/>
+                            <item value="PHP"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <component id="cfadd" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="E-Posta Adresi"/>
+                        </properties>
+                      </component>
+                      <component id="e2b9a" class="javax.swing.JTextField" binding="textSearchEposta">
+                        <constraints>
+                          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="f7be6" class="javax.swing.JTextField" binding="textSearchName">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="31962" binding="panelAddAndDelete" layout-manager="GridLayoutManager" row-count="17" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="a9c53" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Ad Soyad"/>
+                        </properties>
+                      </component>
+                      <component id="d04a0" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Kullanıcı Adı"/>
+                        </properties>
+                      </component>
+                      <component id="a6f31" class="javax.swing.JTextField" binding="textAddUserName">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="f70a1" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Üyelik Tipi"/>
+                        </properties>
+                      </component>
+                      <component id="eca9d" class="javax.swing.JComboBox" binding="comboAddUserType">
+                        <constraints>
+                          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <model>
+                            <item value="EDUCATOR"/>
+                            <item value="STUDENT"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <component id="8eed2" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Yazılım Dili"/>
+                        </properties>
+                      </component>
+                      <component id="70466" class="javax.swing.JComboBox" binding="comboAddLanguage">
+                        <constraints>
+                          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <model>
+                            <item value=""/>
+                            <item value="C"/>
+                            <item value="C++"/>
+                            <item value="C#"/>
+                            <item value="JAVA"/>
+                            <item value="KOTLIN"/>
+                            <item value="HTML"/>
+                            <item value="JAVASCRIPT"/>
+                            <item value="PYTHON"/>
+                            <item value="PHP"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <component id="8d597" class="javax.swing.JButton" binding="buttonAddUser">
+                        <constraints>
+                          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="EKLE"/>
+                        </properties>
+                      </component>
+                      <component id="77eee" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Kullanıcı ID"/>
+                        </properties>
+                      </component>
+                      <component id="b9011" class="javax.swing.JTextField" binding="textDeleteUserID">
+                        <constraints>
+                          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <enabled value="true"/>
+                        </properties>
+                      </component>
+                      <component id="aa64f" class="javax.swing.JButton" binding="buttonDeleteUser">
+                        <constraints>
+                          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="SİL"/>
+                        </properties>
+                      </component>
+                      <component id="c08d1" class="javax.swing.JLabel" binding="labelAddPassword">
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Kullanıcı Şifresi"/>
+                        </properties>
+                      </component>
+                      <component id="eeae9" class="javax.swing.JPasswordField" binding="textAddPassword">
+                        <constraints>
+                          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="ba5d4" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="E-Posta Adresi"/>
+                        </properties>
+                      </component>
+                      <vspacer id="219c0">
+                        <constraints>
+                          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </vspacer>
+                      <scrollpane id="8e531">
+                        <constraints>
+                          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                            <maximum-size width="-1" height="40"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="ab22a" class="javax.swing.JTextArea" binding="textAddEposta">
+                            <constraints/>
+                            <properties>
+                              <lineWrap value="true"/>
+                              <wrapStyleWord value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                      <component id="5ae51" class="javax.swing.JTextField" binding="textAddName">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="ec9b7" binding="panelPatika" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Patikalar"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="5db6" binding="scrollPatika">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="87eb8" class="javax.swing.JTable" binding="tablePatika">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                  <grid id="8502d" binding="panelAddPatika" layout-manager="GridLayoutManager" row-count="2" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="eeb6e" class="javax.swing.JLabel" binding="fieldByPatikaName">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Patika Adı"/>
+                        </properties>
+                      </component>
+                      <component id="eeb7e" class="javax.swing.JButton" binding="buttonAddPatika">
+                        <constraints>
+                          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="EKLE"/>
+                        </properties>
+                      </component>
+                      <grid id="b42de" binding="panelPatikaDelete" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="a4da2" class="javax.swing.JLabel" binding="fieldDeletePatikaName">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                                <preferred-size width="61" height="36"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <text value="Patika Adı"/>
+                            </properties>
+                          </component>
+                          <component id="7118d" class="javax.swing.JComboBox" binding="comboDeletePatika">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="83" height="36"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="871d2" class="javax.swing.JButton" binding="buttonDeletePatika">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                                <preferred-size width="78" height="36"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <text value="SİL"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <component id="8e255" class="javax.swing.JLabel" binding="labelAddPatika">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Yazılım Dili"/>
+                        </properties>
+                      </component>
+                      <component id="6f389" class="javax.swing.JComboBox" binding="comboAddPatikaLanguage">
+                        <constraints>
+                          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <model>
+                            <item value="C"/>
+                            <item value="C++"/>
+                            <item value="C#"/>
+                            <item value="JAVA"/>
+                            <item value="KOTLIN"/>
+                            <item value="HTML"/>
+                            <item value="JAVASCRIPT"/>
+                            <item value="PYTHON"/>
+                            <item value="PHP"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <scrollpane id="16962">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="6fcbf" class="javax.swing.JTextArea" binding="textPatikaName">
+                            <constraints/>
+                            <properties>
+                              <lineWrap value="true"/>
+                              <wrapStyleWord value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="720e7" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="46b3c" class="javax.swing.JLabel" binding="fieldSearchPatikaByName">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Patika Adı"/>
+                        </properties>
+                      </component>
+                      <component id="73da4" class="javax.swing.JButton" binding="buttonSearchPatika">
+                        <constraints>
+                          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="ARA"/>
+                        </properties>
+                      </component>
+                      <component id="6966f" class="javax.swing.JLabel" binding="labelSerachPatika">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Yazılım Dili"/>
+                        </properties>
+                      </component>
+                      <component id="74fc" class="javax.swing.JComboBox" binding="comboSearchPatikaLanguage">
+                        <constraints>
+                          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <model>
+                            <item value=""/>
+                            <item value="C"/>
+                            <item value="C++"/>
+                            <item value="C#"/>
+                            <item value="JAVA"/>
+                            <item value="KOTLIN"/>
+                            <item value="HTML"/>
+                            <item value="JAVASCRIPT"/>
+                            <item value="PYTHON"/>
+                            <item value="PHP"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <scrollpane id="96fc6">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="f1a89" class="javax.swing.JTextArea" binding="textSearchPatikaByName">
+                            <constraints/>
+                            <properties>
+                              <lineWrap value="true"/>
+                              <wrapStyleWord value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="38944" binding="panelLessons" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Dersler"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="aa81c" binding="scrollLessons">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="653a3" class="javax.swing.JTable" binding="tableLessons">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                  <grid id="c7498" layout-manager="GridLayoutManager" row-count="13" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="b2ce6" class="javax.swing.JLabel" binding="labelLessonName">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Dersin Adı"/>
+                        </properties>
+                      </component>
+                      <vspacer id="5224c">
+                        <constraints>
+                          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </vspacer>
+                      <component id="dc950" class="javax.swing.JLabel" binding="labelPatikaName">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Patika Adı"/>
+                        </properties>
+                      </component>
+                      <component id="1b0bd" class="javax.swing.JComboBox" binding="comboAddLessonPatikaName">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="763f" class="javax.swing.JLabel" binding="labelLanguage">
+                        <constraints>
+                          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Yazılım Dili"/>
+                        </properties>
+                      </component>
+                      <component id="dc787" class="javax.swing.JComboBox" binding="comboAddLessonLanguage">
+                        <constraints>
+                          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <model>
+                            <item value="C"/>
+                            <item value="C++"/>
+                            <item value="C#"/>
+                            <item value="JAVA"/>
+                            <item value="KOTLIN"/>
+                            <item value="HTML"/>
+                            <item value="JAVASCRIPT"/>
+                            <item value="PYTHON"/>
+                            <item value="PHP"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <component id="2cfc7" class="javax.swing.JButton" binding="buttonAddLesson">
+                        <constraints>
+                          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="EKLE"/>
+                        </properties>
+                      </component>
+                      <component id="b94c" class="javax.swing.JLabel" binding="labelLessonID">
+                        <constraints>
+                          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Ders ID"/>
+                        </properties>
+                      </component>
+                      <component id="bc6ec" class="javax.swing.JTextField" binding="textDeleteLessonID">
+                        <constraints>
+                          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="916cc" class="javax.swing.JButton" binding="buttonDeleteLesson">
+                        <constraints>
+                          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="SİL"/>
+                        </properties>
+                      </component>
+                      <component id="f3ec1" class="javax.swing.JLabel" binding="labelEducator">
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Eğitmen"/>
+                        </properties>
+                      </component>
+                      <component id="3e5f5" class="javax.swing.JComboBox" binding="comboAddLessonEducator">
+                        <constraints>
+                          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <scrollpane id="3d289">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="fd514" class="javax.swing.JTextArea" binding="textAddLessonName">
+                            <constraints/>
+                            <properties>
+                              <lineWrap value="true"/>
+                              <wrapStyleWord value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="c79ed" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="a893a" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Dersin Adı"/>
+                        </properties>
+                      </component>
+                      <component id="984ae" class="javax.swing.JButton" binding="buttonSearchLesson">
+                        <constraints>
+                          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="ARA"/>
+                        </properties>
+                      </component>
+                      <component id="19955" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Yazılım Dili"/>
+                        </properties>
+                      </component>
+                      <component id="23018" class="javax.swing.JComboBox" binding="comboSearchLessonLanguage">
+                        <constraints>
+                          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <model>
+                            <item value=""/>
+                            <item value="C"/>
+                            <item value="C++"/>
+                            <item value="C#"/>
+                            <item value="JAVA"/>
+                            <item value="KOTLIN"/>
+                            <item value="HTML"/>
+                            <item value="JAVASCRIPT"/>
+                            <item value="PYTHON"/>
+                            <item value="PHP"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <scrollpane id="886e4">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="497af" class="javax.swing.JTextArea" binding="textSearchLessonName">
+                            <constraints/>
+                            <properties>
+                              <wrapStyleWord value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="f811c" binding="panelContents" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="İçerikler"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="73ebf" binding="scrol">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="c5800" class="javax.swing.JTable" binding="tableContents">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                  <grid id="8d1a8" binding="panelSearchContents" layout-manager="GridLayoutManager" row-count="15" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="355ad" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="İçerik Adı"/>
+                        </properties>
+                      </component>
+                      <vspacer id="7b52a">
+                        <constraints>
+                          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </vspacer>
+                      <component id="1098" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Ders Adı"/>
+                        </properties>
+                      </component>
+                      <component id="f9f3f" class="javax.swing.JComboBox" binding="comboAddContLesName">
+                        <constraints>
+                          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="4724c" class="javax.swing.JButton" binding="buttonAddContent">
+                        <constraints>
+                          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="EKLE"/>
+                        </properties>
+                      </component>
+                      <component id="512d9" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="İçerik ID"/>
+                        </properties>
+                      </component>
+                      <component id="b3de5" class="javax.swing.JTextField" binding="textDeleteContID">
+                        <constraints>
+                          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="6dcd" class="javax.swing.JButton" binding="buttonDeleteContent">
+                        <constraints>
+                          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="SİL"/>
+                        </properties>
+                      </component>
+                      <component id="65b29" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="İçerik Tanımı"/>
+                        </properties>
+                      </component>
+                      <component id="ffdb3" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Öğretmen"/>
+                        </properties>
+                      </component>
+                      <component id="70535" class="javax.swing.JComboBox" binding="comboAddContEducName">
+                        <constraints>
+                          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="89303" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="İçerik Linki"/>
+                        </properties>
+                      </component>
+                      <scrollpane id="516c0">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="3fa9e" class="javax.swing.JTextArea" binding="textAddContentTitle">
+                            <constraints/>
+                            <properties>
+                              <lineWrap value="true"/>
+                              <wrapStyleWord value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                      <scrollpane id="6f972">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="7f55b" class="javax.swing.JTextArea" binding="textAddContentDescription">
+                            <constraints/>
+                            <properties>
+                              <lineWrap value="true"/>
+                              <wrapStyleWord value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                      <scrollpane id="fdeb5">
+                        <constraints>
+                          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="6ce6c" class="javax.swing.JTextArea" binding="textAddContLink">
+                            <constraints/>
+                            <properties>
+                              <lineWrap value="false"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="e465e" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="37024" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="İçerik Adı"/>
+                        </properties>
+                      </component>
+                      <component id="596bc" class="javax.swing.JButton" binding="buttonSearchCont">
+                        <constraints>
+                          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="ARA"/>
+                        </properties>
+                      </component>
+                      <component id="a6153" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Ders Adı"/>
+                        </properties>
+                      </component>
+                      <component id="8dbb" class="javax.swing.JComboBox" binding="comboSearchContLesName">
+                        <constraints>
+                          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <model/>
+                        </properties>
+                      </component>
+                      <scrollpane id="5d30c">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="4431c" class="javax.swing.JTextArea" binding="textSearchContentTitle">
+                            <constraints/>
+                            <properties>
+                              <wrapStyleWord value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="d7198" binding="panelQuestions" layout-manager="GridLayoutManager" row-count="2" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Sorular"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="165b7">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="700" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="3828" class="javax.swing.JTable" binding="tableQuestions">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                  <grid id="75e61" binding="panelQuestionSearch" layout-manager="GridLayoutManager" row-count="1" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="7" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="314cf" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Soru"/>
+                        </properties>
+                      </component>
+                      <component id="109b3" class="javax.swing.JButton" binding="buttonSearchQuestion">
+                        <constraints>
+                          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="ARA"/>
+                        </properties>
+                      </component>
+                      <component id="f3877" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Ders Adı"/>
+                        </properties>
+                      </component>
+                      <component id="adf12" class="javax.swing.JComboBox" binding="comboSearchQuesLesName">
+                        <constraints>
+                          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <model/>
+                        </properties>
+                      </component>
+                      <component id="fd81f" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="İçerik Adı"/>
+                        </properties>
+                      </component>
+                      <component id="d50d3" class="javax.swing.JComboBox" binding="comboSearchQuesContTitle">
+                        <constraints>
+                          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <scrollpane id="3ea22">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="1363" class="javax.swing.JTextArea" binding="textSearchQuestion">
+                            <constraints/>
+                            <properties>
+                              <lineWrap value="true"/>
+                              <wrapStyleWord value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <scrollpane id="3a73a">
+                    <constraints>
+                      <grid row="1" column="3" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="967e5" binding="panelAddQuestion" layout-manager="GridLayoutManager" row-count="26" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints/>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="1790" class="javax.swing.JButton" binding="buttonAddQuestion">
+                            <constraints>
+                              <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="SORU EKLE"/>
+                            </properties>
+                          </component>
+                          <component id="b8356" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="D ŞIKKI"/>
+                            </properties>
+                          </component>
+                          <component id="313af" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="C ŞIKKI"/>
+                            </properties>
+                          </component>
+                          <component id="ca3b9" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="B ŞIKKI"/>
+                            </properties>
+                          </component>
+                          <component id="86572" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="A ŞIKKI"/>
+                            </properties>
+                          </component>
+                          <component id="289e7" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="İçerik Sınav Sorusu"/>
+                            </properties>
+                          </component>
+                          <component id="feae" class="javax.swing.JComboBox" binding="comboAddQuestionContentTitle">
+                            <constraints>
+                              <grid row="4" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="2833c" class="javax.swing.JComboBox" binding="comboAddQuestionLessonName">
+                            <constraints>
+                              <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="5f6e4" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="İçerik Seç"/>
+                            </properties>
+                          </component>
+                          <component id="e89ac" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Ders Seç"/>
+                            </properties>
+                          </component>
+                          <component id="cd499" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="CEVAP"/>
+                            </properties>
+                          </component>
+                          <component id="aaf61" class="javax.swing.JComboBox" binding="comboAddQuestionTrueAnswer">
+                            <constraints>
+                              <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <model>
+                                <item value="A"/>
+                                <item value="B"/>
+                                <item value="C"/>
+                                <item value="D"/>
+                              </model>
+                            </properties>
+                          </component>
+                          <component id="cfbc0" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="21" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="ID"/>
+                            </properties>
+                          </component>
+                          <component id="8cb1" class="javax.swing.JTextField" binding="textDeleteQuestionID">
+                            <constraints>
+                              <grid row="22" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="b8cf2" class="javax.swing.JButton" binding="buttonDeleteQuestion">
+                            <constraints>
+                              <grid row="23" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="SİL"/>
+                            </properties>
+                          </component>
+                          <component id="ae101" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Öğretmen  (Seçilen derse binaen otomatik belirlenir)"/>
+                            </properties>
+                          </component>
+                          <vspacer id="8a706">
+                            <constraints>
+                              <grid row="24" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </vspacer>
+                          <component id="d95e2" class="javax.swing.JTextField" binding="textAddQuesEducName">
+                            <constraints>
+                              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <editable value="false"/>
+                            </properties>
+                          </component>
+                          <scrollpane id="6c97d">
+                            <constraints>
+                              <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                                <minimum-size width="-1" height="60"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <component id="8ebd3" class="javax.swing.JTextArea" binding="textAddQuestion">
+                                <constraints/>
+                                <properties>
+                                  <lineWrap value="true"/>
+                                  <wrapStyleWord value="true"/>
+                                </properties>
+                              </component>
+                            </children>
+                          </scrollpane>
+                          <scrollpane id="e3e60">
+                            <constraints>
+                              <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                                <minimum-size width="-1" height="40"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <component id="a1d64" class="javax.swing.JTextArea" binding="textAddOptionA">
+                                <constraints/>
+                                <properties>
+                                  <lineWrap value="true"/>
+                                  <wrapStyleWord value="true"/>
+                                </properties>
+                              </component>
+                            </children>
+                          </scrollpane>
+                          <scrollpane id="569cc">
+                            <constraints>
+                              <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                                <minimum-size width="-1" height="40"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <component id="1cc11" class="javax.swing.JTextArea" binding="textAddOptionB">
+                                <constraints/>
+                                <properties>
+                                  <lineWrap value="true"/>
+                                  <wrapStyleWord value="true"/>
+                                </properties>
+                              </component>
+                            </children>
+                          </scrollpane>
+                          <scrollpane id="157de">
+                            <constraints>
+                              <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                                <minimum-size width="-1" height="40"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <component id="fe5f1" class="javax.swing.JTextArea" binding="textAddOptionC">
+                                <constraints/>
+                                <properties>
+                                  <lineWrap value="true"/>
+                                  <wrapStyleWord value="true"/>
+                                </properties>
+                              </component>
+                            </children>
+                          </scrollpane>
+                          <scrollpane id="cd3de">
+                            <constraints>
+                              <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                                <minimum-size width="-1" height="40"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <component id="5787b" class="javax.swing.JTextArea" binding="textAddOptionD">
+                                <constraints/>
+                                <properties>
+                                  <lineWrap value="true"/>
+                                  <wrapStyleWord value="true"/>
+                                </properties>
+                              </component>
+                            </children>
+                          </scrollpane>
+                          <vspacer id="7f098">
+                            <constraints>
+                              <grid row="25" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </vspacer>
+                        </children>
+                      </grid>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
