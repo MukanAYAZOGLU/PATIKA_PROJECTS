@@ -12,7 +12,6 @@ public class Support {
     public static final String DB_PASSWORD="MySqlPatika.?0";
 
 
-    public static final String [] language={ "C", "C++", "C#" ,"JAVA", "KOTLIN", "HTML","JAVASCRIPTPYTHON", "PHP"};
 
 
 

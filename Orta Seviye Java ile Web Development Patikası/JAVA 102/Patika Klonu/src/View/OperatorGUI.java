@@ -144,8 +144,8 @@ public class OperatorGUI extends JFrame {
         add(panelMain);
         setTitle(Support.PROJECT_TITLE);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setSize(1100,730);
-        setLocation(Support.arrangeLocation("x",1100), Support.arrangeLocation("y",730));
+        setSize(1370,730);
+        setLocation(Support.arrangeLocation("x",1370), Support.arrangeLocation("y",730));
         setVisible(true);
         setResizable(true);
 
@@ -461,39 +461,42 @@ public class OperatorGUI extends JFrame {
 
                         User us=User.getFetchByUserName(userName);
 
-                        if (us.getId()!=userID && us.getUserName()==userName){
+                            if (us!=null && us.getId()!=userID && us.getUserName()==userName){
 
-                            Support.giveMessage("Bu kullanıcı adında kullanıcı mevcuttur. Lütfen başka bir kullanıcı adı tercih ediniz!");
-
-                            loadTableUsers();
-
-
-                        }else{
-
-                            if (User.updateUser(userID, name, userName, password, eposta, userType, language)) {
-                                Support.giveMessage("başarı");
-
+                                Support.giveMessage("Bu kullanıcı adında kullanıcı mevcuttur. Lütfen başka bir kullanıcı adı tercih ediniz!");
 
                                 loadTableUsers();
-                                loadComboEducator();
-                                loadTableLessons();
-                                loadTableContent();
-                                loadTableQuestions();
-                                loadComboEducator();
 
 
-                                if (comboAddContLesName.getItemCount()>0){
-                                    String lessonName=comboAddContLesName.getSelectedItem().toString();
+                            }else{
 
-                                    loadComboAddContEducName(lessonName);
+                                if (User.updateUser(userID, name, userName, password, eposta, userType, language)) {
+                                    Support.giveMessage("başarı");
+
+
+                                    loadTableUsers();
+                                    loadComboEducator();
+                                    loadTableLessons();
+                                    loadTableContent();
+                                    loadTableQuestions();
+                                    loadComboEducator();
+
+
+                                    if (comboAddContLesName.getItemCount()>0){
+                                        String lessonName=comboAddContLesName.getSelectedItem().toString();
+
+                                        loadComboAddContEducName(lessonName);
+                                    }
+
+
+
+                                }else {
+                                    loadTableUsers();
                                 }
 
 
 
-                            }else {
-                                loadTableUsers();
                             }
-
 
 
                         }
@@ -503,7 +506,9 @@ public class OperatorGUI extends JFrame {
 
 
 
-                    }
+
+
+
 
 
             }
