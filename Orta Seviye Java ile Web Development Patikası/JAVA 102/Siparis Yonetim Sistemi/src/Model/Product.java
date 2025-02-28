@@ -117,16 +117,13 @@ public class Product {
         query=query.replace("{{code}}",code);
 
 
-        /*
-
         if (isStock!=null){
 
-            if (isStock.getKey()>0){
-                query+="AND isStock >0";
+            if (isStock.getKey()==0){
+                query+="AND stock =0";
 
-            }else query+="AND isStock <=0";
+            }else query+="AND stock >0";
         }
-         */
 
 
 

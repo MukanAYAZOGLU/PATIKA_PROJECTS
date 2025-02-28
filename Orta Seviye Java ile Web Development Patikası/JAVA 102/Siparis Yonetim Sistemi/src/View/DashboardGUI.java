@@ -164,8 +164,8 @@ public class DashboardGUI extends JFrame{
 
 
 
-        comboStock.addItem(new Item(1,"Stokta Yok"));
-        comboStock.addItem(new Item(2,"Stokta Var"));
+        comboStock.addItem(new Item(0,"Stokta Yok"));
+        comboStock.addItem(new Item(1,"Stokta Var"));
         comboStock.setSelectedItem(null);
 
 
@@ -282,6 +282,24 @@ public class DashboardGUI extends JFrame{
         clear.setRowCount(0);
         int i;
         for(Product product : Product.getProducts()) {
+            i=0;
+            rowsProduct[i++]=product.getId();
+            rowsProduct[i++]=product.getName();
+            rowsProduct[i++]=product.getCode();
+            rowsProduct[i++]=product.getPrice();
+            rowsProduct[i++]=product.getStock();
+            modelTableProduct.addRow(rowsProduct);
+        }
+        tableProduct.setModel(modelTableProduct);
+
+
+    }
+
+    public void loadTableProduct(ArrayList<Product> products){
+        DefaultTableModel clear=(DefaultTableModel) tableProduct.getModel();
+        clear.setRowCount(0);
+        int i;
+        for(Product product : products) {
             i=0;
             rowsProduct[i++]=product.getId();
             rowsProduct[i++]=product.getName();
@@ -589,13 +607,11 @@ public class DashboardGUI extends JFrame{
 
                 String name=textProductName.getText().trim();
                 String code=textProductCode.getText().trim();
-                /*
-                                String selected=comboStock.getSelectedItem();
 
-                loadTableProduct(Product.search(name,code,item));
+                Item item=(Item)comboStock.getSelectedItem();
 
+                loadTableProduct(Product.search(name, code,item));
 
-                 */
 
 
 
