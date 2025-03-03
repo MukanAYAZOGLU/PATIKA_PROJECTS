@@ -136,7 +136,6 @@ private String language;
 
     }
 
-
     public static boolean addLesson(String lessonName, String educatorName, String patikaName, String language) {
 
         String query="INSERT INTO lesson (lessonName, educatorName,patikaName,language) VALUES (?,?,?,?)";

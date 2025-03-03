@@ -38,7 +38,7 @@ public class LogInGUI extends JFrame {
 
 
                 String userNameOrEposta = textUserNameOrEposta.getText();
-                String password = textPassword.getText();
+                String password = new String(textPassword.getPassword());
 
 
                 if (userNameOrEposta.isEmpty() || password.isEmpty()) {
