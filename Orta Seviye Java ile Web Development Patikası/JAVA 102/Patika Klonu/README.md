@@ -1,10 +1,5 @@
 # Used Technologies
-
-###  Java
-###  Swing
-###  JDBC
-###  MySQL
-
+## JAVA - JAVA SWING - JDBC - MySQL
 
 ## Features
 ### Login Panels
