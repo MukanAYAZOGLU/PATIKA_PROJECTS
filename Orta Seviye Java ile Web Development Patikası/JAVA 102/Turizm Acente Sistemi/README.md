@@ -1,8 +1,12 @@
+# Used Technologies
+## JAVA - JAVA SWING - JDBC - MySQL
+
+![giriş](https://github.com/user-attachments/assets/dae70836-ea54-4418-a557-8de22a945479)
 ![kullanıcı tablo](https://github.com/user-attachments/assets/68c4dd4c-4a86-452c-b237-d87c0d743229)
 ![Otel Tabloları png](https://github.com/user-attachments/assets/25a789d4-5dd7-4e56-a0b6-07f9382f2760)
 ![Oda Tabloları](https://github.com/user-attachments/assets/d7968ff6-c008-4bc6-a9ea-c82afaa3e773)
 ![Rezervasyon Tabloları](https://github.com/user-attachments/assets/ea1fe2ed-2e6f-4709-ad3f-82a54255e705)
-![kullanıcı ekleme](https://github.com/user-attachments/assets/06d9483c-c82a-4473-bd68-470e8e76a8e5)
+![kullanıcı ekleme](https://github.com/user-attachments/assets/7d914f00-b0cc-40e2-ab9a-184cdfc466da)
 ![Kullanıcı Güncelleme](https://github.com/user-attachments/assets/f797f1c3-ac00-4e24-b9c2-4d9e34cbc8db)
 ![otel ekleme](https://github.com/user-attachments/assets/954bdebc-7c5f-4611-993c-2504b7a31750)
 ![otel güncelleme](https://github.com/user-attachments/assets/e2c96fb7-8403-4996-a629-e0893ce6d42c)
