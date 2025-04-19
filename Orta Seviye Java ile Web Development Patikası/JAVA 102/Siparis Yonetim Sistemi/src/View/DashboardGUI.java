@@ -712,7 +712,7 @@ public class DashboardGUI extends JFrame{
     public static void main(String[] args) {
         Support.theme();
         Support.TROptions();
-        User user=new User(1,"MUKAN AYAZOĞLU","12@yaani.com","şifre");
+        User user=new User(1,"BUĞRA ERYİĞİTHAN","12@yaani.com","şifre");
 
         new DashboardGUI(user);
 
