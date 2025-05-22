@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7786b5b-0905-4c7f-b28e-c82b2537f171" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Patika Klonu/src/Model/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Patika Klonu/src/Model/Lesson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Patika Store/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Patika Store/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Patika Store/Patika Store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Patika Store/Patika Store.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Patika Store/src/ListOfNotebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Patika Store/src/ListOfNotebook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Patika Store/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Patika Store/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Patika Store/src/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Patika Store/src/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/Sigorta Yonetim Sistemi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/Sigorta Yonetim Sistemi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Account/AccountManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Account/AccountManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Account/Enterprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Account/Enterprise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Account/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Account/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Account/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Account/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Address/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Address/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Address/AddressManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Address/AddressManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Address/HomeAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Address/HomeAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Insurance/CarInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Insurance/CarInsurance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Insurance/Insurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Insurance/Insurance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Insurance/ResidenceInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Insurance/ResidenceInsurance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Insurance/TravelInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sigorta Yonetim Sistemi/src/Insurance/TravelInsurance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Siparis Yonetim Sistemi/src/Support/Support.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Siparis Yonetim Sistemi/src/Support/Support.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threadlerin Yarisi/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Threadlerin Yarisi/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threadlerin Yarisi/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Threadlerin Yarisi/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threadlerin Yarisi/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Threadlerin Yarisi/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threadlerin Yarisi/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Threadlerin Yarisi/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threadlerin Yarisi/Threadlerin Yarisi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Threadlerin Yarisi/Threadlerin Yarisi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threadlerin Yarisi/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Threadlerin Yarisi/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-23.0.1/lib/src.zip!/java.desktop/javax/swing/JOptionPane.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-23.0.1/lib/src.zip!/java.sql/java/sql/DriverManager.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/View/EducatorGUI.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2rDk0JtEZx7KUZoat1ORNaM5tVc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DBConnector.executor": "Run",
+    "Application.EducatorGUI (1).executor": "Run",
+    "Application.EducatorGUI (2).executor": "Run",
+    "Application.EducatorGUI.executor": "Run",
+    "Application.LogInGUI.executor": "Run",
+    "Application.OperatorGUI (1).executor": "Run",
+    "Application.OperatorGUI.executor": "Run",
+    "Application.QuizGUI.executor": "Run",
+    "Application.SignUpGUI.executor": "Run",
+    "Application.StudentGUI.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.UpdateJPopMenuContentGUI.executor": "Run",
+    "Application.UpdateJPopMenuLessonGUI.executor": "Run",
+    "Application.UpdateJPopMenuPatikaGUI.executor": "Run",
+    "Application.UpdateJPopMenuQuestionGUI.executor": "Run",
+    "Application.UpdateJPopMenuUserGUI.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "151",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "306",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/m/KİŞİSEL KLASÖRLER/PATİKA/PATIKA_PROJECTS/Orta Seviye Java ile Web Development Patikası/JAVA 102/Turizm Acente Sistemi",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.OperatorGUI">
+    <configuration name="EducatorGUI (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.EducatorGUI" />
+      <module name="Patika Klonu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EducatorGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.EducatorGUI" />
+      <module name="Patika Klonu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperatorGUI (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.OperatorGUI" />
+      <module name="Patika Klonu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperatorGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.OperatorGUI" />
+      <module name="Patika Klonu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.StudentGUI" />
+      <module name="Patika Klonu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.OperatorGUI" />
+        <item itemvalue="Application.EducatorGUI" />
+        <item itemvalue="Application.StudentGUI" />
+        <item itemvalue="Application.EducatorGUI (1)" />
+        <item itemvalue="Application.OperatorGUI (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7786b5b-0905-4c7f-b28e-c82b2537f171" name="Changes" comment="" />
+      <created>1736100811547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736100811547</updated>
+      <workItem from="1736100812478" duration="238000" />
+      <workItem from="1736165762930" duration="727000" />
+      <workItem from="1736175053513" duration="5083000" />
+      <workItem from="1736192696219" duration="803000" />
+      <workItem from="1736193520859" duration="621000" />
+      <workItem from="1736230993037" duration="5495000" />
+      <workItem from="1736253515235" duration="7290000" />
+      <workItem from="1736335318056" duration="10280000" />
+      <workItem from="1736406644785" duration="7448000" />
+      <workItem from="1736414135911" duration="31000" />
+      <workItem from="1736425784576" duration="2573000" />
+      <workItem from="1736432132188" duration="5620000" />
+      <workItem from="1736496005342" duration="4643000" />
+      <workItem from="1736523870755" duration="117000" />
+      <workItem from="1736592780644" duration="2135000" />
+      <workItem from="1736594931137" duration="4956000" />
+      <workItem from="1736606962713" duration="99000" />
+      <workItem from="1736608859254" duration="2642000" />
+      <workItem from="1736669401227" duration="4591000" />
+      <workItem from="1736674249328" duration="918000" />
+      <workItem from="1736683020894" duration="6296000" />
+      <workItem from="1736694269622" duration="1817000" />
+      <workItem from="1736702154452" duration="506000" />
+      <workItem from="1736749999660" duration="4882000" />
+      <workItem from="1736756176073" duration="3203000" />
+      <workItem from="1736781866283" duration="1791000" />
+      <workItem from="1736843291742" duration="12016000" />
+      <workItem from="1736915378000" duration="9000" />
+      <workItem from="1736929012107" duration="1930000" />
+      <workItem from="1736933014419" duration="7115000" />
+      <workItem from="1736953580225" duration="1733000" />
+      <workItem from="1736971624291" duration="855000" />
+      <workItem from="1737008735914" duration="8241000" />
+      <workItem from="1737023642626" duration="588000" />
+      <workItem from="1737024845034" duration="1456000" />
+      <workItem from="1737039369927" duration="637000" />
+      <workItem from="1737041792086" duration="1996000" />
+      <workItem from="1737044212914" duration="467000" />
+      <workItem from="1737045578671" duration="84000" />
+      <workItem from="1737047432348" duration="902000" />
+      <workItem from="1737103669585" duration="86000" />
+      <workItem from="1737103772924" duration="1769000" />
+      <workItem from="1737111786210" duration="3934000" />
+      <workItem from="1737116355438" duration="30000" />
+      <workItem from="1737127517692" duration="2000" />
+      <workItem from="1737128979352" duration="462000" />
+      <workItem from="1737190830493" duration="2464000" />
+      <workItem from="1737209446248" duration="1425000" />
+      <workItem from="1737212477671" duration="1461000" />
+      <workItem from="1737214667272" duration="861000" />
+      <workItem from="1737216071891" duration="41000" />
+      <workItem from="1737276294259" duration="3162000" />
+      <workItem from="1737282553170" duration="834000" />
+      <workItem from="1737298490206" duration="4479000" />
+      <workItem from="1737458993090" duration="2992000" />
+      <workItem from="1737484174819" duration="2595000" />
+      <workItem from="1737534551495" duration="4916000" />
+      <workItem from="1737542919946" duration="261000" />
+      <workItem from="1737559634111" duration="1734000" />
+      <workItem from="1737621456481" duration="108000" />
+      <workItem from="1737630023382" duration="6761000" />
+      <workItem from="1737707528316" duration="2928000" />
+      <workItem from="1737725906757" duration="3305000" />
+      <workItem from="1737789600746" duration="4537000" />
+      <workItem from="1737805100928" duration="2239000" />
+      <workItem from="1737813094589" duration="2889000" />
+      <workItem from="1737887169312" duration="3130000" />
+      <workItem from="1737901041850" duration="1306000" />
+      <workItem from="1737909148920" duration="2472000" />
+      <workItem from="1737966117683" duration="4059000" />
+      <workItem from="1737989718953" duration="4582000" />
+      <workItem from="1738063515807" duration="335000" />
+      <workItem from="1738070722050" duration="2938000" />
+      <workItem from="1738076877729" duration="3252000" />
+      <workItem from="1738083933028" duration="2491000" />
+      <workItem from="1738141061954" duration="3098000" />
+      <workItem from="1738145243696" duration="1000" />
+      <workItem from="1738164323506" duration="34000" />
+      <workItem from="1738164376501" duration="2725000" />
+      <workItem from="1738181245183" duration="409000" />
+      <workItem from="1738223614264" duration="5116000" />
+      <workItem from="1738229708713" duration="1077000" />
+      <workItem from="1738232172482" duration="1505000" />
+      <workItem from="1738247586722" duration="1091000" />
+      <workItem from="1738248992188" duration="673000" />
+      <workItem from="1738250425412" duration="1295000" />
+      <workItem from="1738251914403" duration="656000" />
+      <workItem from="1738309381637" duration="4548000" />
+      <workItem from="1738314240998" duration="1115000" />
+      <workItem from="1738324289777" duration="638000" />
+      <workItem from="1738332424247" duration="2190000" />
+      <workItem from="1738414828257" duration="3093000" />
+      <workItem from="1738425392088" duration="487000" />
+      <workItem from="1738441680467" duration="69000" />
+      <workItem from="1738491490952" duration="4283000" />
+      <workItem from="1738506312392" duration="6004000" />
+      <workItem from="1738515116623" duration="188000" />
+      <workItem from="1738570227410" duration="3628000" />
+      <workItem from="1738586653034" duration="799000" />
+      <workItem from="1738596345019" duration="2572000" />
+      <workItem from="1738655962251" duration="8222000" />
+      <workItem from="1738677331205" duration="96000" />
+      <workItem from="1738683283333" duration="2546000" />
+      <workItem from="1738740026221" duration="8230000" />
+      <workItem from="1738751735026" duration="3117000" />
+      <workItem from="1738829071450" duration="5250000" />
+      <workItem from="1738836837501" duration="1654000" />
+      <workItem from="1738852837053" duration="1733000" />
+      <workItem from="1738855917485" duration="1827000" />
+      <workItem from="1738929807419" duration="508000" />
+      <workItem from="1738930996508" duration="1954000" />
+      <workItem from="1738934834279" duration="873000" />
+      <workItem from="1738995937113" duration="4108000" />
+      <workItem from="1739001621769" duration="3948000" />
+      <workItem from="1739014247393" duration="2366000" />
+      <workItem from="1739028990563" duration="2229000" />
+      <workItem from="1739114101242" duration="191000" />
+      <workItem from="1739178002201" duration="6051000" />
+      <workItem from="1739189652913" duration="1364000" />
+      <workItem from="1739192124184" duration="6057000" />
+      <workItem from="1739198636354" duration="35000" />
+      <workItem from="1739279720658" duration="6912000" />
+      <workItem from="1739288489564" duration="2056000" />
+      <workItem from="1739358455116" duration="9301000" />
+      <workItem from="1739446920337" duration="7362000" />
+      <workItem from="1739461441870" duration="6364000" />
+      <workItem from="1739629472770" duration="8677000" />
+      <workItem from="1739701841701" duration="4512000" />
+      <workItem from="1739714325763" duration="2268000" />
+      <workItem from="1739721311441" duration="1657000" />
+      <workItem from="1739780762978" duration="3369000" />
+      <workItem from="1739787724507" duration="3310000" />
+      <workItem from="1739802156466" duration="1353000" />
+      <workItem from="1739806140441" duration="2170000" />
+      <workItem from="1739868440617" duration="1956000" />
+      <workItem from="1739870442187" duration="15000" />
+      <workItem from="1739877312312" duration="10365000" />
+      <workItem from="1739956316501" duration="2149000" />
+      <workItem from="1739965949011" duration="309000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

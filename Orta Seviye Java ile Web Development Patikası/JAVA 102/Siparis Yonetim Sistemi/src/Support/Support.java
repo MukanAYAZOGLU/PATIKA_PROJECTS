@@ -122,6 +122,9 @@ public class Support {
         }
 
         String [] array=eposta.split("@");
+
+
+
         if(array.length!=2){
             return false;
         }
